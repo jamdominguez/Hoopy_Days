@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/lighting_yellow.png-1f99008967fe323c7f639ca474a1bf0d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://assets/GFX/Particles/lighting_yellow.png"
+dest_files=[ "res://.import/lighting_yellow.png-1f99008967fe323c7f639ca474a1bf0d.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/ground_sand_small.png-78c33156eb47263bf296c48b82ae20fd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://assets/GFX/Environment/ground_sand_small.png"
+dest_files=[ "res://.import/ground_sand_small.png-78c33156eb47263bf296c48b82ae20fd.stex" ]
 
 [params]
 

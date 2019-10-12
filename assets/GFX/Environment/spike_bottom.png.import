@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/spike_bottom.png-609a8f81099d7bef8831523680b4400f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://assets/GFX/Environment/spike_bottom.png"
+dest_files=[ "res://.import/spike_bottom.png-609a8f81099d7bef8831523680b4400f.stex" ]
 
 [params]
 

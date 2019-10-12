@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/portal_yellow.png-b343dbf0ad26924b76974b5a5f895d6d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://assets/GFX/Items/portal_yellow.png"
+dest_files=[ "res://.import/portal_yellow.png-b343dbf0ad26924b76974b5a5f895d6d.stex" ]
 
 [params]
 
