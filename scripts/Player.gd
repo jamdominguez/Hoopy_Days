@@ -3,8 +3,8 @@ extends KinematicBody2D
 var motion = Vector2(0,0)
 var UP = Vector2(0,-1)
 var SPEED = 1500
-var JUMP_SPEED = 5000
-var GRAVITY = 300
+var JUMP_SPEED = 3500
+var GRAVITY = 150
 
 signal animate
 
