@@ -32,7 +32,6 @@ frame = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]
 editor/display_folded = true
-position = Vector2( 1000, -500 )
 current = true
 zoom = Vector2( 3, 3 )
 limit_left = 0

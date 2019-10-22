@@ -10,6 +10,7 @@
 [ext_resource path="res://assets/GFX/Environment/ground_snow_small.png" type="Texture" id=8]
 
 [node name="PaltformTiles" type="Node2D"]
+editor/display_folded = true
 
 [node name="ground_cake" type="Sprite" parent="."]
 editor/display_folded = true

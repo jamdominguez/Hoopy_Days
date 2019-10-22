@@ -7,6 +7,7 @@ const SPEED = 1500
 const JUMP_SPEED = 3500
 const GRAVITY = 150
 const WORLD_LIMIT = 4000
+const BOOST_MULTIPLIER = 1.5
 
 var lives = 3
 
@@ -59,3 +60,8 @@ func hurt():
 	$PainSFX.play()
 	if lives < 0:
 		end_game()
+
+func boost():
+	position.y -= 1 # to no stay on floor. apply_gravity no set motion.y = 0 (process function)
+	yield(get_tree(), "idle_frame") # wait from a frame
+	motion.y -= JUMP_SPEED * BOOST_MULTIPLIER
