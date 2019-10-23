@@ -1,0 +1,180 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Tileset.tres" type="TileSet" id=2]
+[ext_resource path="res://scenes/SpikeTop.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/JumpPad.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/SFX/Summer_Park.ogg" type="AudioStream" id=5]
+
+[node name="Level2" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 632.913, 1690.55 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 2 )
+format = 1
+tile_data = PoolIntArray( 142, 6, 0, 147, 6, 0, 152, 6, 0, 262286, 6, 0, 262291, 6, 0, 262296, 6, 0, 458920, 7, 0, 655461, 2, 0, 655473, 2, 0, 721039, 6, 0, 852149, 7, 0, 917540, 5, 0, 917556, 5, 0, 917572, 5, 0, 917585, 6, 0, 917590, 6, 0, 917594, 6, 0, 1048678, 2, 0, 1048689, 2, 0, 1245352, 7, 0, 1376361, 3, 0, 1376369, 3, 0, 1507364, 4, 0, 1507482, 7, 0, 1704042, 3, 0, 1704049, 3, 0, 1704075, 5, 0, 1769481, 0, 0, 1769486, 0, 0, 2031636, 0, 0, 2031641, 0, 0, 2097213, 3, 0, 2359365, 2, 0, 2359370, 2, 0, 2359435, 7, 0, 2818155, 6, 0, 2818160, 6, 0, 2818165, 6, 0, 2818170, 6, 0, 2818175, 6, 0, 2818180, 6, 0, 2883588, 5, 0, 3145738, 6, 0, 3276943, 7, 0, 3473429, 6, 0, 3473434, 6, 0, 3473439, 6, 0 )
+
+[node name="Hazards" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="SpikeTop" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 1542.76, 1957.22 )
+
+[node name="SpikeTop2" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 1636.63, 1957.22 )
+
+[node name="SpikeTop3" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 1726.24, 1957.22 )
+
+[node name="SpikeTop4" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 1820.11, 1957.22 )
+
+[node name="SpikeTop5" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 5247.47, 869.473 )
+
+[node name="SpikeTop6" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 5524.82, 869.473 )
+
+[node name="SpikeTop7" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 5341.34, 869.473 )
+
+[node name="SpikeTop8" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 5430.95, 869.473 )
+
+[node name="SpikeTop9" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 4965.88, 2276.72 )
+
+[node name="SpikeTop10" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 5058.21, 2276.91 )
+
+[node name="SpikeTop11" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 4481.68, 2277.38 )
+
+[node name="SpikeTop12" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 4574.01, 2277.58 )
+
+[node name="SpikeTop13" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 6869.75, 1320.47 )
+
+[node name="SpikeTop14" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 6777.42, 1320.28 )
+
+[node name="SpikeTop15" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7286.75, 1320.28 )
+
+[node name="SpikeTop16" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7379.08, 1320.47 )
+
+[node name="SpikeTop17" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 6839.5, 1638.37 )
+
+[node name="SpikeTop18" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 6931.83, 1638.56 )
+
+[node name="SpikeTop19" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7284.35, 1638.37 )
+
+[node name="SpikeTop20" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7376.68, 1638.56 )
+
+[node name="SpikeTop21" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 6515.31, 616.693 )
+
+[node name="SpikeTop22" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 6792.66, 616.693 )
+
+[node name="SpikeTop23" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 6609.18, 616.693 )
+
+[node name="SpikeTop24" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 6698.79, 616.693 )
+
+[node name="SpikeTop25" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7561.27, 616.693 )
+
+[node name="SpikeTop26" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7467.41, 616.693 )
+
+[node name="SpikeTop27" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7377.79, 616.693 )
+
+[node name="SpikeTop28" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7283.93, 616.693 )
+
+[node name="SpikeTop29" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7376.43, 1000.32 )
+
+[node name="SpikeTop30" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7466.04, 1000.32 )
+
+[node name="SpikeTop31" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7282.57, 1000.32 )
+
+[node name="SpikeTop32" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7559.91, 1000.32 )
+
+[node name="SpikeTop33" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 6674.48, 1000.32 )
+
+[node name="SpikeTop34" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 6764.09, 1000.32 )
+
+[node name="SpikeTop35" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 6580.61, 1000.32 )
+
+[node name="SpikeTop36" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 6857.95, 1000.32 )
+
+[node name="SpikeTop37" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7523.55, 2721.49 )
+
+[node name="SpikeTop38" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7613.16, 2721.49 )
+
+[node name="SpikeTop39" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7707.03, 2721.49 )
+
+[node name="SpikeTop40" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 7429.69, 2721.49 )
+
+[node name="SpikeTop42" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 8123.01, 2723.24 )
+
+[node name="SpikeTop43" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 8033.4, 2723.24 )
+
+[node name="SpikeTop44" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 8216.88, 2723.24 )
+
+[node name="SpikeTop46" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 8678.57, 2725 )
+
+[node name="SpikeTop47" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 8772.44, 2725 )
+
+[node name="JumpPad" type="Node" parent="."]
+
+[node name="JumpPad" parent="JumpPad" instance=ExtResource( 4 )]
+position = Vector2( 4001.23, 2010.84 )
+
+[node name="JumpPad2" parent="JumpPad" instance=ExtResource( 4 )]
+position = Vector2( 1381.9, 1949.31 )
+
+[node name="JumpPad3" parent="JumpPad" instance=ExtResource( 4 )]
+position = Vector2( 4459.78, 861.072 )
+
+[node name="JumpPad4" parent="JumpPad" instance=ExtResource( 4 )]
+position = Vector2( 6038.13, 859.006 )
+
+[node name="JumpPad5" parent="JumpPad" instance=ExtResource( 4 )]
+position = Vector2( 9255.71, 3161.66 )
+
+[node name="JumpPad6" parent="JumpPad" instance=ExtResource( 4 )]
+position = Vector2( 351.906, 2787.7 )
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -5.0
+autoplay = true

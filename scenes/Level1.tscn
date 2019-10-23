@@ -12,7 +12,7 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 8198.35, 658.504 )
+position = Vector2( 463.537, 1720.66 )
 collision_mask = 14
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -76,6 +76,7 @@ position = Vector2( 8375.59, 2473.49 )
 position = Vector2( 8467.06, 2473.95 )
 
 [node name="JumpPads" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="JumpPad" parent="JumpPads" instance=ExtResource( 4 )]
 position = Vector2( 7603.39, 934.482 )

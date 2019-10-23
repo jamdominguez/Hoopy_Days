@@ -22,7 +22,7 @@ func _physics_process(delta):
 	move()
 	animate()
 	move_and_slide(motion, UP) #execute motion
-	
+
 func apply_gravity():
 	if position.y > WORLD_LIMIT:
 		end_game()
