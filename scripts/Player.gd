@@ -9,8 +9,6 @@ const GRAVITY = 150
 const WORLD_LIMIT = 4000
 const BOOST_MULTIPLIER = 1.5
 
-var lives = 3
-
 signal animate
 
 func _ready():
@@ -25,7 +23,8 @@ func _physics_process(delta):
 
 func apply_gravity():
 	if position.y > WORLD_LIMIT:
-		end_game()
+		print("limit, end game")
+		get_tree().call_group("Gamestate","end_game")
 	if is_on_floor(): # no apply gravity
 		motion.y = 0
 	elif is_on_ceiling(): # avoid stay close ceiling, force go donw motion > 0
@@ -49,17 +48,11 @@ func move():
 func animate():
 	emit_signal("animate", motion)
 
-func end_game():
-	get_tree().change_scene("res://scenes/GameOver.tscn")
-
 func hurt():
 	position.y -= 1 # to no stay on floor. apply_gravity no set motion.y = 0 (process function)
 	yield(get_tree(), "idle_frame") # wait from a frame
-	motion.y -= JUMP_SPEED # jump if hurt
-	lives -= 1
+	motion.y -= JUMP_SPEED # jump if hurt	
 	$PainSFX.play()
-	if lives < 0:
-		end_game()
 
 func boost():
 	position.y -= 1 # to no stay on floor. apply_gravity no set motion.y = 0 (process function)

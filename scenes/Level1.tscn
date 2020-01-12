@@ -1,22 +1,24 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/Tileset.tres" type="TileSet" id=2]
-[ext_resource path="res://scenes/SpikeTop.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/JumpPad.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/SFX/Summer_Park.ogg" type="AudioStream" id=5]
+[ext_resource path="res://scripts/GameState.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Tileset.tres" type="TileSet" id=3]
+[ext_resource path="res://scenes/SpikeTop.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/JumpPad.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/SFX/Summer_Park.ogg" type="AudioStream" id=6]
 
 [node name="Level1" type="Node2D"]
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_vertical_guides_": [  ]
 }
 
-[node name="Player" parent="." instance=ExtResource( 1 )]
+[node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 463.537, 1720.66 )
 collision_mask = 14
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource( 2 )
+tile_set = ExtResource( 3 )
 collision_layer = 2
 format = 1
 tile_data = PoolIntArray( -130966, 7, 0, 655420, 4, 0, 852095, 3, 0, 983158, 2, 0, 1114200, 5, 0, 1310854, 3, 0, 1376276, 0, 0, 1376281, 0, 0, 1376299, 1, 0, 1507408, 4, 0, 1507409, 4, 0, 1507419, 4, 0, 1507420, 4, 0, 1507421, 4, 0, 1638526, 3, 0, 1835008, 2, 0, 1835009, 2, 0, 1835010, 2, 0, 1835011, 2, 0, 1835012, 2, 0, 1835013, 2, 0, 1835014, 2, 0, 1835015, 2, 0, 1835016, 2, 0, 1835017, 2, 0, 1835018, 2, 0, 1835019, 2, 0, 1835020, 2, 0, 1835021, 2, 0, 1835022, 2, 0, 1835023, 2, 0, 1835024, 2, 0, 1835025, 2, 0, 1835026, 2, 0, 1835027, 2, 0, 1835028, 2, 0, 1835029, 2, 0, 1835030, 2, 0, 1835031, 2, 0, 1835032, 2, 0, 1835033, 2, 0, 1835034, 2, 0, 1835035, 2, 0, 1835036, 2, 0, 1835037, 2, 0, 1835038, 2, 0, 1835039, 2, 0, 1835040, 2, 0, 1835041, 2, 0, 1835042, 2, 0, 1835043, 2, 0, 1835044, 2, 0, 1835045, 2, 0, 1835046, 2, 0, 1835047, 2, 0, 1835048, 2, 0, 1835049, 2, 0, 1835050, 2, 0, 1835051, 2, 0, 1835052, 2, 0, 1835053, 2, 0, 1835054, 2, 0, 1835055, 2, 0, 1835056, 2, 0, 1835057, 2, 0, 1835058, 2, 0, 1835059, 2, 0, 1835060, 2, 0, 1835061, 2, 0, 1835062, 2, 0, 1835063, 2, 0, 1835064, 2, 0, 1835065, 2, 0, 1835080, 4, 0, 1835081, 4, 0, 1835082, 4, 0, 1835083, 4, 0, 1835084, 4, 0, 1835085, 4, 0, 1835086, 4, 0, 2097286, 3, 0, 2424938, 0, 0, 2424947, 0, 0, 2424956, 0, 0, 2556016, 1, 0, 2556025, 1, 0, 2556034, 1, 0 )
@@ -24,67 +26,67 @@ tile_data = PoolIntArray( -130966, 7, 0, 655420, 4, 0, 852095, 3, 0, 983158, 2, 
 [node name="Hazards" type="Node" parent="."]
 editor/display_folded = true
 
-[node name="SpikeTop" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 3091.99, 1766.84 )
 
-[node name="SpikeTop2" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop2" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 3186.17, 1767.24 )
 
-[node name="SpikeTop3" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop3" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 3279.23, 1767.31 )
 
-[node name="SpikeTop4" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop4" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 3468.27, 1768.68 )
 
-[node name="SpikeTop5" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop5" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 3561.33, 1768.74 )
 
-[node name="SpikeTop6" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop6" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 3374.09, 1768.27 )
 
-[node name="SpikeTop7" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop7" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 3906.7, 614.347 )
 
-[node name="SpikeTop8" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop8" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 5506.87, 1445.57 )
 
-[node name="SpikeTop17" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop17" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 4886.16, 1769.48 )
 
-[node name="SpikeTop9" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop9" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 5922.15, 1445.57 )
 
-[node name="SpikeTop10" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop10" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 7736.06, 933.271 )
 
-[node name="SpikeTop11" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop11" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 7221.01, 2472.38 )
 
-[node name="SpikeTop12" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop12" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 7312.49, 2472.84 )
 
-[node name="SpikeTop13" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop13" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 7798.3, 2472.38 )
 
-[node name="SpikeTop14" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop14" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 7889.77, 2472.84 )
 
-[node name="SpikeTop15" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop15" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 8375.59, 2473.49 )
 
-[node name="SpikeTop16" parent="Hazards" instance=ExtResource( 3 )]
+[node name="SpikeTop16" parent="Hazards" instance=ExtResource( 4 )]
 position = Vector2( 8467.06, 2473.95 )
 
 [node name="JumpPads" type="Node" parent="."]
 editor/display_folded = true
 
-[node name="JumpPad" parent="JumpPads" instance=ExtResource( 4 )]
+[node name="JumpPad" parent="JumpPads" instance=ExtResource( 5 )]
 position = Vector2( 7603.39, 934.482 )
 
-[node name="JumpPad2" parent="JumpPads" instance=ExtResource( 4 )]
+[node name="JumpPad2" parent="JumpPads" instance=ExtResource( 5 )]
 position = Vector2( 4702.06, 1761.44 )
 
 [node name="BGM" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
+stream = ExtResource( 6 )
 volume_db = -5.0
 autoplay = true
