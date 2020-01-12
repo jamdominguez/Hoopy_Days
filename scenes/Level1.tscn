@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/GameState.gd" type="Script" id=1]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://scenes/SpikeTop.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/JumpPad.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/SFX/Summer_Park.ogg" type="AudioStream" id=6]
+[ext_resource path="res://scenes/GUI.tscn" type="PackedScene" id=7]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource( 1 )
@@ -90,3 +91,7 @@ position = Vector2( 4702.06, 1761.44 )
 stream = ExtResource( 6 )
 volume_db = -5.0
 autoplay = true
+
+[node name="GUI" parent="." groups=[
+"GUI",
+] instance=ExtResource( 7 )]
