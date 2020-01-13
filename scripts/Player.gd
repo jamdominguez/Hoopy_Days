@@ -25,7 +25,7 @@ func apply_gravity():
 	if position.y > WORLD_LIMIT:
 		print("limit, end game")
 		get_tree().call_group("Gamestate","end_game")
-	if is_on_floor(): # no apply gravity
+	if is_on_floor() and motion.y > 0: # no apply gravity
 		motion.y = 0
 	elif is_on_ceiling(): # avoid stay close ceiling, force go donw motion > 0
 		motion.y = 1
@@ -34,7 +34,7 @@ func apply_gravity():
 
 func jump():
 	if Input.is_action_pressed("jump") and is_on_floor():
-		motion.y -= JUMP_SPEED
+		motion.y = -JUMP_SPEED
 		$JumpSFX.play()
 	
 func move():

@@ -13,7 +13,6 @@
 editor/display_folded = true
 
 [node name="ground_cake" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 269.636, 525.777 )
 texture = ExtResource( 1 )
 
