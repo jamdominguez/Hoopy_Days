@@ -9,11 +9,11 @@ func _process(delta):
 func fire():
 	#it is necessary add a scene, no a string
 	if not timeout:
-		print("fire")
+		#print("fire")
 		$Sprite/RayCast2D.add_child(load("res://scenes/Lightning.tscn").instance())
 		$Sprite/Timer.start()
 		timeout = true
 
 func _on_Timer_timeout():
-	print("timeout!")
+	#print("timeout!")
 	timeout = false
