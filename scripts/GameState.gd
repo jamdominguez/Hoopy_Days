@@ -23,6 +23,9 @@ func update_GUI():
 func end_game():
 	get_tree().change_scene("res://scenes/GameOver.tscn")
 
+func win_game():
+	get_tree().change_scene("res://scenes/Victory.tscn")
+
 func coin_up():
 	coins += 1
 	update_GUI()

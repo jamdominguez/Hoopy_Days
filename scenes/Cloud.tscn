@@ -37,3 +37,4 @@ anims/drift = SubResource( 1 )
 position = Vector2( 0, 60 )
 enabled = true
 cast_to = Vector2( 0, 750 )
+[connection signal="timeout" from="Sprite/Timer" to="." method="_on_Timer_timeout"]
