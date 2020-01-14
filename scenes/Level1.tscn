@@ -17,7 +17,7 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 465.695, 1720.66 )
+position = Vector2( 300, 1720.66 )
 collision_mask = 14
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -78,13 +78,21 @@ position = Vector2( 8375.59, 2473.49 )
 position = Vector2( 8467.06, 2473.95 )
 
 [node name="Coins" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="Coin" parent="Coins" instance=ExtResource( 5 )]
 position = Vector2( 2850.84, 1244.61 )
 
 [node name="Coin2" parent="Coins" instance=ExtResource( 5 )]
 position = Vector2( 1412.81, 1223.59 )
+
+[node name="Coin38" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 651.267, 1695.02 )
+
+[node name="Coin39" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 760.532, 1693.73 )
+
+[node name="Coin40" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 875.171, 1692.44 )
 
 [node name="Coin3" parent="Coins" instance=ExtResource( 5 )]
 position = Vector2( 1551.56, 1223.59 )
