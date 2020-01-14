@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scripts/GameState.gd" type="Script" id=1]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/SFX/Summer_Park.ogg" type="AudioStream" id=7]
 [ext_resource path="res://scenes/GUI.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/Spikeman.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/Cloud.tscn" type="PackedScene" id=10]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource( 1 )
@@ -78,6 +79,7 @@ position = Vector2( 8375.59, 2473.49 )
 position = Vector2( 8467.06, 2473.95 )
 
 [node name="Coins" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="Coin" parent="Coins" instance=ExtResource( 5 )]
 position = Vector2( 2850.84, 1244.61 )
@@ -217,7 +219,6 @@ autoplay = true
 ] instance=ExtResource( 8 )]
 
 [node name="NPCs" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="Spikeman" parent="NPCs" instance=ExtResource( 9 )]
 position = Vector2( 2334.17, 1714.52 )
@@ -233,3 +234,6 @@ position = Vector2( 7539.94, 2286.84 )
 
 [node name="Spikeman5" parent="NPCs" instance=ExtResource( 9 )]
 position = Vector2( 8224.33, 751.77 )
+
+[node name="Cloud" parent="NPCs" instance=ExtResource( 10 )]
+position = Vector2( 763.823, 966.578 )
